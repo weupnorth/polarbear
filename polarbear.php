@@ -10,3 +10,6 @@ License: 			GPLv2 or later
 License URI: 		http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+require_once 'modules/wun-fail2ban.php';
+require_once 'modules/wun-head-cleanup.php';
+require_once 'modules/stop-404-redirect.php';
