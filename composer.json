@@ -1,0 +1,21 @@
+{
+  "name": "weupnorth/polarbear",
+  "type": "wordpress-plugin",
+  "license": "GPLv2",
+  "description": "WordPress plugin containing modules used in all our WordPress-projects.",
+  "homepage": "https://github.com/weupnorth/polarbear",
+  "authors": [
+    {
+      "name": "Andreas Karman",
+      "email": "andreas.karman@weupnorth.se",
+      "homepage": "http://andreaskarman.se"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "composer/installers": "~1.0"
+  }
+}
