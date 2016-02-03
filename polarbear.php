@@ -13,3 +13,4 @@ License URI: 		http://www.gnu.org/licenses/gpl-2.0.html
 require_once 'modules/wun-fail2ban.php';
 require_once 'modules/wun-head-cleanup.php';
 require_once 'modules/wun-stop-404-redirect.php';
+require_once 'modules/wun-scripts-styles.php';
