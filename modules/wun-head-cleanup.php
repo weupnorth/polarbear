@@ -19,3 +19,15 @@ remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 ); // prev link
 remove_action( 'wp_head', 'start_post_rel_link', 10, 0 ); // start link
 remove_action( 'wp_head', 'adjacent_posts_rel_link', 10, 0 ); // Display relational links for the posts adjacent to the current post.
 remove_action( 'wp_head', 'wp_generator' ); // Display the XHTML generator that is generated on the wp_head hook, WP version
+
+/**
+ * Removing Yoast SEO debug output from wp_head.
+ *
+ * @link   http://andreaskarman.se/2016/02/03/visa-inte-att-du-anvander-yoast-seo/
+ */
+
+if (defined('WPSEO_VERSION')){
+  add_action('get_header',function (){ ob_start(function ($o){
+  return preg_replace('/\n?<.*?yoast.*?>/mi','',$o); }); });
+  add_action('wp_head',function (){ ob_end_flush(); }, 999);
+}
